@@ -26,5 +26,5 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Build docker fild
-      run : docker build . --file src/main/docker/Dockerfile.jvm --tag academy:$(date +%s)
+    - name: Build docker field
+      run : docker build . --file ./src/main/docker/Dockerfile.jvm --tag academy:$(date +%s)
