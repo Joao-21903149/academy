@@ -25,5 +25,3 @@ jobs:
               --health-retries 5
     steps:
     - uses: actions/checkout@v4
-    - uses: xyrsto/academy-fs/.github/actions/maven_build@main
-    - uses: xyrsto/academy-fs/.github/actions/docker_build@main
