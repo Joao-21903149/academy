@@ -24,7 +24,9 @@ jobs:
               --health-timeout 5s
               --health-retries 5
     steps:
-    - uses: actions/checkout@v4
 
     - name: Build docker field
       run : docker build . --file ./src/main/docker/Dockerfile.jvm --tag academy:$(date +%s)
+
+    - uses: actions/checkout@v4
+
